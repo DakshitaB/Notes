@@ -1,0 +1,87 @@
+JavaScript Operators:
+1.	Arithmetic Operators :
+•	Multiplication - *
+•	Division - / : gives quotient as the result
+•	Modulus Operator - % : gives remainder as the result
+•	Exponential (raised to the power) - **
+•	++ : increments by +1
+•	-- : decrements by -1
+•	Ex: 
+let a=4
+let b=5
+a++
+b—
+document.write(a, “<br>”)
+document.write(a, “<br>”)
+document.write(a*b , "<br>")
+document.write(a**b, "<br>")
+document.write(a/b, "<br>")
+document.write(a%b, "<br>")
+  		Output : 
+5
+4
+20
+625
+1.25
+1
+2.	Assignment Operators: 
+•	Ex: 
+let a=5
+let b=2
+a+=40 //a=a+40 a=5+40=45
+b-=5 //b=b-5
+document.write(a , "<br>")
+document.write(b , "<br>")
+	Output: 
+45
+-3
+3.	Logical Operators:
+•	Ex:
+let a=5
+let b=2
+document.write(a>b && a>2 , "<br>")
+document.write(a>b && a>12 , "<br>")  
+document.write(a>b || a>12 , "<br>") 
+document.write(!(a>12) , "<br>")
+Output:
+true
+false
+true
+true
+
+4.	Relational Operators: 
+•	They are also known as Comparison Operators.
+•	“==” operator doesn’t check for the data type of both the values.
+•	“===” operator checks the data type of both the values and gives the output accordingly.
+•	Ex: 
+let a=5
+let b="5"
+document.write(a==b, "<br>")
+document.write(a!=b, "<br>")
+document.write(a===b, "<br>")
+document.write(a!==b, "<br>")
+Output:
+true
+false
+false
+true
+5.	Conditional Operators: 
+•	Ex:
+let t = 40
+let r = (t>40)?'Ac-off':'Ac-on'
+document.write(r, "<br>")
+Output:
+Ac-on
+
+Window Methods:
+1.	Prompt – by default it is considered as string.
+2.	Alert
+Ex:
+//alert("Zoro")
+//document.write(alert)
+
+//a=prompt("Enter Your Name")
+//alert(a)
+
+let aa = prompt("Enter your name")
+alert(`My name is : ${aa}`)
