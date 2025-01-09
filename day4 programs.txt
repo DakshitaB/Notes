@@ -1,0 +1,38 @@
+<script>
+        //example1
+        let a=5
+        let b=10
+        if(a>b){
+            document.write("Hi luffy","<br>")
+        }else{
+            document.write("Zoro","<br>")
+        }
+        document.write("Welcome to INDIA")
+
+        //example 2
+        age = prompt("Enter your age")
+        name = prompt("Enter your name")
+        if(age<18){
+            alert(name+ ", You are too young to marry")
+        }else if(age>35){
+            alert(name+ ", You are too old to marry")
+        }else{
+            alert(name+ " Perfect age to marry")
+        }
+        alert("Welcome to India")
+
+        //example 3
+        let a = prompt("Enter the A score")
+        let b = prompt("Enter the B score")
+        if(a>300 || b>300){
+            alert("You can team up")
+        }
+        else if(a+b<500){
+            alert("You can team up")
+        }
+        else{
+            alert("You can't team up")
+        }
+    </script>
+
+
