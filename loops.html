@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ex1
+        //for(let i = 0; i<7; i=i+2){
+            //document.write(i+2,)
+        //}
+        
+        //ex2
+        //for (let i=0; i<7; i=i+2){ 
+            //document.write(i+2, "<br>")
+        //}
+        //i=0 0<7 True, 0+2 = 2
+        //i=2 2<7 True, 2+2 = 4
+        //i=4 4<7 True, 4+2 = 6
+        //i=6 6<7 True, 6+2 = 8
+        //i=8 8<7 False, loop ends
+
+        //ex3
+        //for(let i = 10; i<=15; i++){
+            //document.write(i, "<br>")
+        //}
+
+        //ex4
+        //for(let i=1; i<=5; i++){
+            //document.write("dakshuu", "<br>")
+        //}
+
+        //ex5
+        for(let i=1; i<=10; i++){
+            document.write(i**2)
+        }
+
+        //ex6 9th table
+        document.write("<br>")
+        for(let i=1; i<=10; i++){
+            document.write("9 x "+i+"= "+ i*9, "<br>")
+        }
+
+        //ex7 adding the numbers in array
+        const numbers = [1,2,3,4,5]
+        let sum = 0
+        for (let i=0; i<numbers.length; i++){
+            sum = sum + numbers[i]
+        }
+        document.write(sum)
+        //0+1=1 #0 = 1
+        //1+2=3 #1 = 2
+        //3+3=6 #2 = 3
+        //6+1=4 #3 = 4
+        //10+5=15 #4 = 5
+    </script>
+</body>
+</html>
