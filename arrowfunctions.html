@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //EX1 arrow functions without parameters
+        let C=()=>{
+            console.log("Hello world")
+        }
+        C()
+
+        //EX2 arrow functions with parameters
+        let a = (x,y)=>{
+            console.log(x+y)
+        }
+        a(20,30)
+
+        //EX3 arrow functions with one parameter
+        let greet=x=>{
+            console.log(x)
+        }
+        greet('HELLO')
+
+        //EX4 arrow functions with no argument
+        let greetings=()=>{
+            console.log("Hello")
+        }
+        greetings()
+
+        //EX5 arrow functions as an expression
+        let age=18;
+        let welcome=(age<18) ?
+        ()=>console.log("Hi itachi"):
+        ()=>console.log("Hi Obito");
+        welcome()
+    </script>
+</body>
+</html>
