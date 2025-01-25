@@ -7,16 +7,86 @@
 </head>
 <body>
     <script>
-        function greet(name,callback){
-            console.log(`Hello,${name}!`)
-            callback();
+        //function greet(name,callback){
+            //console.log(`Hello,${name}!`)
+            //callback();
             //this calls the callback function after greeting
-        }
-        function sayGoodbye(){
-            console.log("Goodbye")
-        }
+        //}
+        //function sayGoodbye(){
+            //console.log("Goodbye")
+        //}
         //call greet and pass sayGoodbye as the callback
-        greet("Sam",sayGoodbye)
+        //greet("Sam",sayGoodbye)
+
+        //ex2 25jan
+        //function mainfunction(callback){
+            //console.log("Executing main function");
+            //callback()
+            //here we call the callback function
+        //}
+        //function callbackFunction(){
+            //console.log("Callback function executed");
+        //}
+        //mainfunction(callbackFunction);
+        
+        //ex3
+        //passing a Named function as a callback
+        //function greeting(name, callback){
+            //console.log("Hello " +  name);
+            //callback();
+            //executes the callback function greeting
+        //}
+        //function goodbye(){
+            //console.log("Goodbye!")
+        //}
+        //greeting("Itachi", goodbye);
+
+        //ex4
+        //using an anonymous function (function without a name) as a callback
+        //greets("Obito", function(){
+            //console.log("Goodbye!");
+        //})
+        //anonymous function as function
+
+        //ex5
+        //asynchronous callback with setTimeout
+        //function fetchData(callback){
+            ///console.log("Fetching data...")
+            //setTimeout(function(){
+                //console.log("Data Fetched");
+                //callback();
+            //},2000);
+        ///}
+        //function processData(){
+            //console.log("Processing the fetched data..");
+        //}
+        //fetchData(processData);
+
+        //ex6
+        //using a callback with array methods(map)
+        const numbers = [1,2,3,4,5]
+        const d = numbers.map(function(num) {
+            return num * 2
+        })
+        console.log(d)
+        //1. map() is a built in array method that callback function
+        //to process each item in the array
+        //2. the callback here doubles each number (num*2) and will result a 
+        //new array with doubled values
+
+        //ex7
+        function registerUser(username, email, callback){
+            console.log("registering user"+username);
+            setTimeout(function(){
+                console.log("user"+username+"registered successfully");
+                callback(email);
+            },2000);
+        }
+        function sendWelcomeEmail(email){
+            console.log("sending welcome email to"+email);
+        };
+        registerUser("Itachi","itachi123@gmail.com, sendWelcomeEmail");
+        
     </script>
 </body>
 </html>
